@@ -13,6 +13,8 @@ class ClienteController {
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Cliente.list(params), model:[clienteInstanceCount: Cliente.count()]
+
+
     }
 
     def show(Cliente clienteInstance) {

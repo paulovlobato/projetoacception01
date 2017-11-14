@@ -8,13 +8,14 @@ hibernate {
     cache.use_second_level_cache = true
     cache.use_query_cache = true
     //cache.region.factory_class = 'net.sf.ehcache.hibernate.EhCacheRegionFactory' //Hibernate 3
-    cache.region.factory_class = 'org.hibernate.cache.ehcache.EhCacheRegionFactory' // Hibernate 4
+    //cache.region.factory_class = 'org.hibernate.cache.ehcache.EhCacheRegionFactory' // Hibernate 4
+    cache.region.factory_class = 'org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory' // ?
 }
 // environment specific settings
 environments {
     development {
         dataSource {
-            dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate', ''
+            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             //url = "jdbc:mysql://localhost/sec_treasurer?useUnicode=yes&characterEncoding=UTF-8"
             url = "jdbc:mysql://localhost/locadora"
             username = "acception"

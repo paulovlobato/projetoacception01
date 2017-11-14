@@ -131,6 +131,10 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/css/**':       ['permitAll'],
 	'/**/images/**':    ['permitAll'],
 	'/**/favicon.ico':  ['permitAll'],
-    '/jogo/**': ['ROLE_SUPORTE']
+    '/jogo/**': ['ROLE_SUPORTE'],
+    '/cliente/**': ['ROLE_USUARIO'],
+    '/grails/**': ['ROLE_USUARIO'],
+    '/solicitacao/**': ['ROLE_USUARIO']
+
 ]
 

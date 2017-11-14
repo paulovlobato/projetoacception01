@@ -116,6 +116,9 @@
 						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
 					</g:each>
 				</ul>
+				<ul>
+					<a href="/locadora/cliente/login.gsp">Login</a>
+				</ul>
 			</div>
 		</div>
 	</body>
