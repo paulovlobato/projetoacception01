@@ -7,7 +7,7 @@ class Jogo {
 
     static constraints = {
         nome nullable: false, blank: false
-        //plataforma inList: ['PC','Playstation 4', 'Xbox One'];
+        plataforma inList: ['PC','Playstation 4', 'Xbox One'];
     }
 
     static mapping = {

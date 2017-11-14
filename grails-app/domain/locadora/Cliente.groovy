@@ -1,10 +1,10 @@
 package locadora
 
-import com.acception.security.Usuario
+import com.acception.security.User
 
 class Cliente {
 
-    Usuario usuario
+    User usuario
 
     String nome;
     Integer idade;
