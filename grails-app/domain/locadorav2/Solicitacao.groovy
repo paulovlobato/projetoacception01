@@ -9,6 +9,10 @@ class Solicitacao {
 
     static constraints = {
         tempoSolicitado inList:['14', '30', '60', '90']
-        statusSolicitacao inList:['Aprovado', 'Aguardando', 'Negado']
+        statusSolicitacao inList:['Aguardando', 'Negado', 'Aprovado']
+    }
+
+    static mapping = {
+
     }
 }

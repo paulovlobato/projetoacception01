@@ -10,4 +10,8 @@ class Jogo {
         nome nullable: false, blank: false
         plataforma inList: ['PC', 'Playstation 4', 'Xbox One']
     }
+
+    static mapping = {
+
+    }
 }
