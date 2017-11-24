@@ -20,13 +20,13 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'solicitacoes', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'solicitacoes', 'error')} " style="display: none;">
 	<label for="solicitacoes">
 		<g:message code="jogo.solicitacoes.label" default="Solicitacoes" />
-		
+
 	</label>
-	
-<ul class="one-to-many">
+
+<ul class="one-to-many" style="display: none;">
 <g:each in="${jogoInstance?.solicitacoes?}" var="s">
     <li><g:link controller="solicitacao" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
 </g:each>

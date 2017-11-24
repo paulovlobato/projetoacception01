@@ -8,7 +8,7 @@ class Solicitacao {
     String statusSolicitacao
 
     static constraints = {
-        tempoSolicitado inList:['14', '30', '60', '90']
+        tempoSolicitado inList:['15 minutos', '30 minutos', '60 minutos', '90 minutos']
         statusSolicitacao inList:['Aguardando', 'Negado', 'Aprovado']
     }
 

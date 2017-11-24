@@ -25,7 +25,7 @@
 		<g:message code="solicitacao.jogo.label" default="Jogo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="jogo" name="jogo.id" from="${locadorav2.Jogo.list()}" optionKey="id" required="" value="${solicitacaoInstance?.jogo?.id}" class="many-to-one"/>
+	<g:select id="jogo" name="jogo.id" from="${locadorav2.Jogo.list()}" optionKey="id" optionValue="nome" required="" value="${solicitacaoInstance?.jogo?.id}" class="many-to-one"/>
 
 </div>
 

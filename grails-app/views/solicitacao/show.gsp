@@ -45,7 +45,7 @@
 				<li class="fieldcontain">
 					<span id="jogo-label" class="property-label"><g:message code="solicitacao.jogo.label" default="Jogo" /></span>
 					
-						<span class="property-value" aria-labelledby="jogo-label"><g:link controller="jogo" action="show" id="${solicitacaoInstance?.jogo?.id}">${solicitacaoInstance?.jogo?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="jogo-label"><g:link controller="jogo" action="show" id="${solicitacaoInstance?.jogo?.id}">${solicitacaoInstance?.jogo?.nome.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

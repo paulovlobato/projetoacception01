@@ -40,7 +40,7 @@
 					
 						<td>${fieldValue(bean: solicitacaoInstance, field: "statusSolicitacao")}</td>
 					
-						<td>${fieldValue(bean: solicitacaoInstance, field: "jogo")}</td>
+						<td>${fieldValue(bean: solicitacaoInstance, field: "jogo.nome")}</td>
 					
 					</tr>
 				</g:each>
